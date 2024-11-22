@@ -17,7 +17,6 @@ nav {
 }
 
 .men {
-    background-color: #444;
     padding: 10px 20px;
     border-radius: 5px;
     text-align: center;
@@ -34,13 +33,14 @@ nav {
     text-align: center;
     padding: 10px 0;
 }
-
-.men:hover {
-    background-color: #555;
-}
-
 .link:hover {
-    color: #FFD700;
+    color: grey;
+}
+body{
+    height: 100%;
+    background: linear-gradient(rgba(196, 206, 230, 0.75), rgba(196, 206, 230, 0.75)),url(../img/fondo1.jpg) no-repeat center center fixed ;
+    background-size: cover;
+
 }
 
 

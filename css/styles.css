@@ -1,9 +1,28 @@
-.navegador{
+.menu{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 40px;
     
+}
+.link{
+    color: white;
+    padding:20px;
+    align-self: center;
+    text-align: center;
+}
+.men{
+    display: flex;
+    background-color: #444;
+    margin: 25px;
+    width: 400px;
+    height: 40px;
+    text-align: center;
+    color: #444;
+    justify-content: space-around;
 }
 a{
     text-decoration: none;
 }
-li{
-    text-decoration: none;
+ul{
+    list-style-type: none;
 }

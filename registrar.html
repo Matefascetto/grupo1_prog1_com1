@@ -35,47 +35,46 @@
     
     </header>
     
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-md-8">
-                
-                <h2>Formulario de registro</h2>
-                <form method="get" class="contact-form" action="login.html">
-                    
-                    <div class="form-group">
-                        <label for="email">Correo electrónico</label>
-                        <input type="email" name="email" id="email" class="form-control">
-                        <div class="invalid-feedback email"></div>
-                    </div>
-                   
-                    <div class="form-group">
-                        <label for="password">Contraseña</label>
-                        <input type="password" name="password" id="password" class="form-control">
-                        <div class="invalid-feedback password"></div>
-                    </div>
-                    <div class="form-group">
-                        <label class="label">Acepto terminos y condiciones</label>
-                            <input type="checkbox" class="checkbox">
-                        <div class="invalid-feedback checkbox"></div>
-                    </div>
-                    <div class="form-group">
-                        <a href="login.html">Ya tengo una cuenta</a>
-                    </div>
-                   
-                    <button type="submit" class="btn btn-success">ENVIAR</button>
-                </form>
-            </div>
-        </div>
+    <article class="registrado">
+        <h3 class="register">REGISTRESE</h3>
+    </article>
+    <form class="login" >
+        <div class="inputs">
+            <label class="label"> Email:
+            <input class="caja caja-email" required  type="email" name="mail" placeholder="ejemplo@gmail.com" value="">
+        </label>
     </div>
-    <footer>
-        <article class="footer">
-            <p class="foot">Todos los derechos reservados</p>
-            <p class="foot">Solo nos hacemos cargo de hacer comida demasiada deliciosa para tu paladar</p>
-            <p class="foot">Página creada por:</p>
-            <h4 class="foot foot-creators">Valentín Vallejo, Bruno Santos y Mateo Fascetto</h4>
-        </article>
-    </footer>
+    
+        <div class="inputs">
+            <label class="label" > Contraseña:
+            <input class="caja caja-contraseña" required type="password" name="pass" placeholder="ejemplo@gmail.com" value="">
+        </label>
+    </div>
+    
+    <div class="inputs">
+        <label class="label">Recordarme
+            <input type="checkbox" class="checkbox">
+        </label>
+    </div>
 
+    
+    <div class="inputs">
+                <article class="articulo"> 
+                <input class="caja caja-enviar" type="submit" value="enviar">
+            </div>
+    
+            </div>
+    
+        </form>
+
+        <footer>
+            <article class="footer">
+                <p class="foot">Todos los derechos reservados</p>
+                <p class="foot">Solo nos hacemos cargo de hacer comida demasiada deliciosa para tu paladar</p>
+                <p class="foot">Página creada por:</p>
+                <h4 class="foot foot-creators">Valentín Vallejo, Bruno Santos y Mateo Fascetto</h4>
+            </article>
+        </footer>
     
     <script src="./js/registro.js"></script>
     

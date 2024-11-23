@@ -89,6 +89,7 @@ body{
 
 
 
+
 .form-group {
     margin: 5px;
     text-align:center;
@@ -97,5 +98,91 @@ body{
     box-sizing: border-box;
     border-color: black;
 } 
+
+/*login*/
+
+.inputs{
+    display: flex;
+    width: 245px;
+    height: 100px;
+    margin: 25px;
+}
+.registrado{
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+.register{
+    text-align: center;
+    font-family: sans-serif;
+    margin: 0;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-weight: 100;
+    font-size: 1.3em;
+    padding: 10px;
+}
+.caja-button{
+    width: 100px;
+    height: 20px;
+}
+.caja-enviar{
+    display: flex;
+    justify-content: space-around;
+    width: 120px;
+    height: 35px;
+    background-color: rgba(8, 92, 181, 0.78);
+    color: white;
+    border-radius: 10px;
+}
+.checkbox{
+    width: auto;
+    height: 10px;
+}
+.linklog{
+    text-decoration: none;
+    color: white;
+}
+
+
+.login{
+padding: 50px;
+background-color: #000;
+margin: auto;
+height: fit-content;
+width: 450px;
+margin-bottom: 50px;
+color: white;
+border-radius: 25px;
+}
+
+/*footer*/
+
+footer {
+    background-color: #000;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 30px;
+    font-family: Arial, sans-serif;
+}
+
+.footer {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.foot {
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+.foot-creators {
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+}
+
 
 

@@ -2,10 +2,11 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    font-family: "Libre Baskerville";
 }
 header{
     background-color: rgba(138, 164, 171, 0.14);
-    
+    font-family: "Libre Baskerville";
 }
 nav {
     padding: 10px 0;
@@ -189,6 +190,14 @@ footer {
     font-size: 18px;
     font-weight: bold;
     color: white;
+}
+/*home*/
+
+h3{
+    font-family: "Libre Baskerville";
+    display: flex;
+    justify-content: center;
+    margin: 55px;
 }
 
 

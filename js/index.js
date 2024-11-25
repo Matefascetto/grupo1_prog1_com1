@@ -3,19 +3,19 @@ let url = "https://dummyjson.com/recipes";
 
 fetch(url)
     .then(function (resp) {
-        return resp.json(); // Convierte la respuesta a JSON
+        return resp.json(); 
     })
     .then(function (data) {
-        console.log(data); // Muestra todos los datos en la consola
-        let recipes = data.recipes; // Accede al array de recetas
+        console.log(data); 
+        let recipes = data.recipes
 
-        // Itera sobre las primeras 10 recetas
         for (let i = 0; i < 10; i++) {
             container1.innerHTML += `
                 <article class="imagenes">
                     <p class="fee"><i> <b>${recipes[i].name}<b/> </i></p>
                     <img src= "https://cdn.dummyjson.com/recipe-images/${recipes[i].id}.webp"class="receta-img">
-                    <p>Ingredientes: ${recipes[i].ingredients.join(", ")}</p>
+                    <p class="difficulty"> Dificultad: ${recipes[i].difficulty} </p>
+                    <p class="ingredients">Ingredientes: ${recipes[i].ingredients.join(", ")}</p>
                 </article>`;
         }
     })

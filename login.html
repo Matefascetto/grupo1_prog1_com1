@@ -41,37 +41,35 @@
     <article class="registrado">
         <h3 class="register">BIENVENIDO</h3>
     </article>
-    <form class="login" >
+    <form method="get" class="login" action="index.html">
         <div class="inputs">
-            <label class="label"> Email:
-            <input class="caja caja-email" required  type="email" name="mail" placeholder="ejemplo@gmail.com" value="">
-        </label>
-    </div>
+            <label>Email:
+                <input class="caja caja-email" required type="email" name="mail" placeholder="ejemplo@gmail.com">
+                <div class="invalid-feedback email"></div>
+            </label>
+        </div>
     
         <div class="inputs">
-            <label class="label" > Contraseña:
-            <input class="caja caja-contraseña" required type="password" name="pass" placeholder="Ingrese su contraseña" value="">
-        </label>
-    </div>
+            <label>Contraseña:
+                <input class="caja caja-contraseña" required type="password" name="pass" placeholder="Ingrese su contraseña">
+                <div class="invalid-feedback contraseña"></div>
+            </label>
+        </div>
     
-    <div class="inputs">
-        <label class="label">Recordarme
-            <input type="checkbox" class="checkbox">
-        </label>
-    </div>
-    <div class="inputs">
-        <a class="linklog" href="registrar.html">No tengo una cuenta</a>
-    </div>
-
+        <div class="inputs">
+            <label>Recordarme
+                <input type="checkbox" class="checkbox">
+            </label>
+        </div>
     
-    <div class="inputs">
-                <article class="articulo"> 
-                <input class="caja caja-enviar" type="submit" value="enviar">
-            </div>
+        <div class="inputs">
+            <a class="linklog" href="registrar.html">No tengo una cuenta</a>
+        </div>
     
-            </div>
-    
-        </form>
+        <div class="inputs">
+            <input class="caja caja-enviar" type="submit" value="Enviar">
+        </div>
+    </form>
 
         <footer>
             <article class="footer">

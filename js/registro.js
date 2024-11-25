@@ -1,23 +1,30 @@
-document.addEventListener("DOMContentLoaded", function () {
-    let formulario = document.querySelector(".login");
-    let cajaEmail = document.querySelector(".caja-email");
-    let cajaContraseña = document.querySelector(".caja-contraseña");
+let form = document.querySelector(".login");
+let mail = document.querySelector(".caja-email2")
+let contra = document.querySelector(".caja-contraseña2")
 
-    formulario.addEventListener("submit", function (event) {
-        event.preventDefault(); // Evita el envío por defecto
-        let isValid = true;
+let error_contraseña = document.querySelector(".noContra")
+let error_email = document.querySelector(".noEmail")
 
-        // Validar si los campos están vacíos
-        if (cajaEmail.value === "" || cajaContraseña.value === "") {
-            alert("Todos los campos son obligatorios.");
-            isValid = false;
-        }
+form.addEventListener("submit", function (e) {
+    e.preventDefault();
+    let valida = true;
 
-        // Si es válido, enviar el formulario
-        if (isValid) {
-            formulario.submit();
-            window.location.href = "login.html"
-        }
-    });
-});
+    if (mail.value == "") {
+        error_email.style.display = "block";
+        error_email.innerText = "Por favor complete el campo";
+        valida = false;
+    }
 
+    if (contra.value == "") {
+        error_contraseña.style.display = "block";
+        error_contraseña.innerText = "Por favor complete el campo";
+        valida = false;
+    }
+
+    if (valida){
+      form.submit(); 
+    }
+
+
+
+})

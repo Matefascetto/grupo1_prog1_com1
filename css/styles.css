@@ -282,9 +282,23 @@ h3{
 .cargar:hover{
     background-color: #444;
 }
+.ingredients{
+    background-color: bisque;
+    border-radius: 5px;
+    border: #666;
+    text-decoration: none;
+    color: #666;
+    height: 30px;
+    display: block;
+    justify-content: center;
+    margin: 10px;
+    padding: 5px 10px;
+}
 
 
+.ingredients:hover{
+    color: burlywood;
 
-
+}
 
 

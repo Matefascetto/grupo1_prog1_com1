@@ -1,4 +1,5 @@
-let container1 = document.querySelector(".recetas"); // Selecciona correctamente el contenedor con clase "recetas"
+let container1 = document.querySelector(".recetas"); 
+
 let url = "https://dummyjson.com/recipes";
 
 fetch(url)
@@ -15,13 +16,19 @@ fetch(url)
                     <p class="fee"><i> <b>${recipes[i].name}<b/> </i></p>
                     <img src= "https://cdn.dummyjson.com/recipe-images/${recipes[i].id}.webp"class="receta-img">
                     <p class="difficulty"> Dificultad: ${recipes[i].difficulty} </p>
-                    <p class="ingredients">Ingredientes: ${recipes[i].ingredients.join(", ")}</p>
+                    <a href="./receta.html?id=${recipes[i].id}"class="ingredients"> Receta </a>
                 </article>`;
-        }
+        }    
+        
     })
     .catch(function (error) {
         console.error("Error al obtener las recetas:", error);
     });
+
+
+
+
+
 
 
 

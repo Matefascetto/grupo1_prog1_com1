@@ -1,34 +1,38 @@
-let container1 = document.querySelector(".recetas"); 
+let sumatoria = 0; 
+const limite = 10; 
+let receta = ``;
 
-let url = "https://dummyjson.com/recipes";
+function vermas() {
+    let api = `https://dummyjson.com/recipes?limit=${limite}&skip=${sumatoria}`;
 
-fetch(url)
-    .then(function (resp) {
-        return resp.json(); 
-    })
-    .then(function (data) {
-        console.log(data); 
-        let recipes = data.recipes
+    fetch(api)
+        .then(function (resp) {
+            return resp.json();
+        })
+        .then(function (data) {
+            console.log(data);
+            let recipes = data.recipes;
+            let container1 = document.querySelector(".recetas");
 
-        for (let i = 0; i < 10; i++) {
-            container1.innerHTML += `
-                <article class="imagenes">
-                    <p class="fee"><i> <b>${recipes[i].name}<b/> </i></p>
-                    <img src= "https://cdn.dummyjson.com/recipe-images/${recipes[i].id}.webp"class="receta-img">
-                    <p class="difficulty"> Dificultad: ${recipes[i].difficulty} </p>
-                    <a href="./receta.html?id=${recipes[i].id}"class="ingredients"> Receta </a>
-                </article>`;
-        }    
-        
-    })
-    .catch(function (error) {
-        console.error("Error al obtener las recetas:", error);
-    });
+            for (let i = 0; i < recipes.length; i++) {
+                container1.innerHTML += `
+                    <article class="imagenes">
+                        <p class="fee"><i> <b>${recipes[i].name}</b> </i></p>
+                        <img src="https://cdn.dummyjson.com/recipe-images/${recipes[i].id}.webp" class="receta-img">
+                        <p class="difficulty">Dificultad: ${recipes[i].difficulty}</p>
+                        <a href="./receta.html?id=${recipes[i].id}" class="ingredients">Receta</a>
+                    </article>`;
+            }
 
+            container1.innerHTML += receta;
+            sumatoria += limite;
+        })
+        .catch(function (error) {
+            console.error("Error al obtener las recetas:", error);
+        });
+}
 
+vermas();
 
-
-
-
-
-
+let BotonVerMas = document.querySelector(".cargar");
+BotonVerMas.addEventListener("click", vermas);

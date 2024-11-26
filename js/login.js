@@ -33,6 +33,5 @@ form.addEventListener("submit", function (e) {
     
     if (verdad) {
         form.submit();
-        window.location
     }
 });

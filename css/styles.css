@@ -191,6 +191,43 @@ footer {
     font-weight: bold;
     color: white;
 }
+.footer-card {
+    background-color: #444; 
+    border-radius: 8px; 
+    padding: 20px;
+    max-width: 300px; 
+    margin: 20px auto; 
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+
+}
+
+.footer-card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+}
+
+.footer-card h2 {
+    color: #fff; 
+    margin-bottom: 15px;
+}
+
+.contactoo {
+    display: block;
+    color: #ddd;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 10px 0;
+    transition: color 0.3s;
+}
+
+.contact-item :hover {
+    color: #0056b3; 
+}
+
+.contactito  {
+    color: #fff; 
+}
+
 
 
 h3{

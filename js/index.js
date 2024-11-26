@@ -1,11 +1,11 @@
-let sumatoria = 0; 
+let suma = 0; 
 const limite = 10; 
 let receta = ``;
 
 function vermas() {
-    let api = `https://dummyjson.com/recipes?limit=${limite}&skip=${sumatoria}`;
+    let url = `https://dummyjson.com/recipes?limit=${limite}&skip=${suma}`;
 
-    fetch(api)
+    fetch(url)
         .then(function (resp) {
             return resp.json();
         })
@@ -36,3 +36,4 @@ vermas();
 
 let BotonVerMas = document.querySelector(".cargar");
 BotonVerMas.addEventListener("click", vermas);
+

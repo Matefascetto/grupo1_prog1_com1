@@ -10,12 +10,12 @@ fetch(`https://dummyjson.com/recipes/${id}`)
     })
     .then(function(data) {
     let texto = `
-    <article>
-        <h2>${data.name}</h2>
-        <p>Instrucciones: ${data.instructions}</p>
-        <p>Tiempo de preparación: ${data.prepTimeMinutes} minutos</p>
+    <article class="receta-especifica">
+        <h2 class="titulo-receta">${data.name} by Antonio</h2>
+        <p> <b> Instrucciones: </b> ${data.instructions}</p>
+        <p> <b> Tiempo de preparación:</b> ${data.prepTimeMinutes} minutos</p>
         <img class= "image" src="${data.image}" alt="${data.name}">
-        <p>Categoría: ${data.mealType}</p>
+        <p> <b>Categoría:</b> ${data.mealType}</p>
     </article>
     `;
     receta.innerHTML = texto;

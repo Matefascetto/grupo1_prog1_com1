@@ -1,3 +1,4 @@
+
 let suma = 0; 
 const limite = 10; 
 let receta = ``;

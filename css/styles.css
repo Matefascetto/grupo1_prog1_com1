@@ -324,4 +324,52 @@ h3{
     margin-bottom: 20px;
 }
 
+@media (max-width: 700px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
 
+    .menu {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .men {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    .imagenes {
+        width: 90%;
+        margin: 10px auto;
+    }
+
+    .recetas {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .receta-img {
+        max-width: 100%;
+    }
+
+    .login {
+        width: 90%;
+        padding: 20px;
+    }
+
+    footer {
+        font-size: 8px;
+    }
+    .logo{
+        border-radius: 50px;
+        height: 180px;
+    }
+    
+    
+}

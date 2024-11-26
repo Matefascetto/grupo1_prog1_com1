@@ -10,7 +10,6 @@ form.addEventListener("submit", function (e) {
     e.preventDefault();
     let verdad = true;
 
-   
     if (email.value == "") {
         noemail.style.display = "block";
         noemail.innerText = "Por favor complete el campo email";
@@ -20,7 +19,6 @@ form.addEventListener("submit", function (e) {
         noemail.style.display = "none"; 
     }
 
-   
     if (contraseña.value == "") {
         nocontra.style.display = "block";
         nocontra.innerText = "Por favor complete el campo contraseña";

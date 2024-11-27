@@ -23,3 +23,4 @@ fetch(`https://dummyjson.com/recipes/${id}`)
     .catch(function(error) {
     console.log("Error: " + error);
     });
+    

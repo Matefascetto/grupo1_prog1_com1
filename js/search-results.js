@@ -20,10 +20,10 @@ fetch(`https://dummyjson.com/recipes/search?q=${terminoBusqueda}`)
         } else {
             data.recipes.forEach(function(receta) {
                 texto += `
-                    <article class="receta">
-                        <img src="${receta.image}" alt="${receta.name}" class="receta-img">
-                        <h2>${receta.name}</h2>
-                        <a href="./recetas.html?id=${receta.id}" class="link">Ver más</a>
+                    <article class="recetasas">
+                        <h2 class="sub-search">${receta.name}</h2>
+                        <img src="${receta.image}" alt="${receta.name}" class="recetasas-img">
+                        <a class="ver-receta" href="./recetas.html?id=${receta.id}" class="link">Ver receta</a>
                     </article>`;
             });
         }

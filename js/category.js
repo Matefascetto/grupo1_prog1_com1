@@ -10,7 +10,7 @@ fetch(apiUrl)
         return response.json();
     })
     .then((data) => {
-        contenedorRecetas.innerHTML = `<h2>Recetas de la categoría: ${categoria}</h2>`;
+        contenedorRecetas.innerHTML = `<h2 class="titul">Recetas de la categoría: ${categoria}</h2>`;
         data.recipes.forEach((receta, i) => {
             contenedorRecetas.innerHTML += `
                 <article class="imagenes">
@@ -19,6 +19,7 @@ fetch(apiUrl)
                     <p class="difficulty">Dificultad: ${data.recipes[i].difficulty}</p>
                     <a href="./recetas.html?id=${data.recipes[i].id}" class="ingredients">Receta</a>
                 </article>
+
             `;
         });
     })

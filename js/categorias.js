@@ -15,9 +15,8 @@ fetch(api)
     const categorias = data[i];
 
   contenedorRecetas.innerHTML += 
-         `<article class="receta card">
-            <h4 class="card-title">${categorias}</h4>
-            <a class="btn" href="./category.html?categorias=${categorias}">Ver comidas de esta categoria</a>
+         `<article class="recetacard">
+            <h4 class="card-title"> <a class="btn" href="./category.html?categorias=${categorias}">${categorias}</a></h4>
            </article>`
 };
 })

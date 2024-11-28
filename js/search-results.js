@@ -12,7 +12,7 @@ fetch(`https://dummyjson.com/recipes/search?q=${terminoBusqueda}`)
     .then(function(data) {
         let texto = "";
 
-        if (data.recipes && data.recipes == "") {
+        if (data.recipes && data.recipes.length ==0) {
             texto = `No se encontraron resultados para: "${terminoBusqueda}"`; 
         } else if(terminoBusqueda == ""){
             texto = "El texto esta vacio, por favor complete la busqueda"

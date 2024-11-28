@@ -26,7 +26,7 @@ function vermas() {
             }
 
             container1.innerHTML += receta;
-            sumatoria += limite;
+            suma += limite;
         })
         .catch(function (error) {
             console.error("Error al obtener las recetas:", error);

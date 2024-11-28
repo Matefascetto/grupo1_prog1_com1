@@ -9,6 +9,7 @@ fetch(`https://dummyjson.com/recipes/${id}`)
     return response.json();
     })
     .then(function(data) {
+        
     let texto = `
     <article class="receta-especifica">
         <h2 class="titulo-receta">${data.name} by Antonio</h2>
@@ -23,4 +24,3 @@ fetch(`https://dummyjson.com/recipes/${id}`)
     .catch(function(error) {
     console.log("Error: " + error);
     });
-    

@@ -6,7 +6,6 @@
 }
 header{
     height: 100%;
-    background: linear-gradient(rgba(196, 206, 230, 0.75), rgba(196, 206, 230, 0.75)) no-repeat center center  ;
     background-size: cover;
     font-family: "Libre Baskerville";
 
@@ -216,7 +215,7 @@ body{
 }
 
 footer {
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),  url(../img/logoscuro.jpg) no-repeat center center;
+    background: linear-gradient(rgba(0, 0, 0, 2), rgba(0, 0, 0, 2)),  url(../img/logoscuro.jpg) no-repeat center center;
     background-size: cover;
     height:75vh;
     margin: 0; 

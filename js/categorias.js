@@ -16,7 +16,7 @@ fetch(api)
 
   contenedorRecetas.innerHTML += 
          `<article class="recetacard">
-            <h4 class="card-title"> <a class="btn" href="./category.html?categorias=${categorias}">${categorias}</a></h4>
+            <h4> <a class="btn" href="./category.html?categorias=${categorias}">${categorias}</a></h4>
            </article>`
 };
 })
